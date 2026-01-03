@@ -1,0 +1,27 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+
+# Odoo
+*.log
+*.pot
+*.po
+
+# Database and environment
+*.db
+*.sql
+*.sqlite3
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

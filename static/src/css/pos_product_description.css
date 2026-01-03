@@ -1,0 +1,31 @@
+/* POS Product Description Styles */
+
+.pos .product-info-popup .section-description {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border-left: 3px solid #00a09d;
+}
+
+.pos .product-info-popup .section-description .label {
+    font-weight: bold;
+    color: #00a09d;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+}
+
+.pos .product-info-popup .section-description .product-description-content {
+    color: #333;
+    line-height: 1.6;
+    font-size: 13px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Make the description section stand out for pharmacy use */
+.pos .product-info-popup .section-description .value {
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 3px;
+}

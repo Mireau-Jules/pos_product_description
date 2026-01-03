@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="point_of_sale.ProductInfoPopup" t-inherit="point_of_sale.ProductInfoPopup" t-inherit-mode="extension" owl="1">
+        
+        <!-- Add description section after the title section, before Financials -->
+        <xpath expr="//div[@class='section-financials mt-3 mb-4 pb-4 border-bottom text-start']" position="before">
+            <div class="section-description mt-3 mb-4 pb-4 border-bottom text-start" t-if="props.product.description_sale or props.product.description">
+                <h3 class="section-title">Description du produit</h3>
+                <div class="section-description-body">
+                    <p class="mb-0" t-esc="props.product.description_sale || props.product.description"/>
+                </div>
+            </div>
+        </xpath>
+
+    </t>
+
+</templates>
